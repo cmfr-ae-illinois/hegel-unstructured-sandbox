@@ -4,6 +4,8 @@
   - Tested on 1 and 4 procs with [PETSc](https://gitlab.com/petsc/petsc) (branch `main`, commit `2cac467e9d6cbb8f79fe7bcfeb2b1f07091fa1af`) configured with the options `--download-triangle --download-metis --download-parmetis`
   - Compilation with CMake and execution:
    ```
+      export PETSC_DIR=<path_to_petsc>
+      export PETSC_ARCH=<name_of_petsc_build>
       mkdir build
       cd build
       cmake ..
